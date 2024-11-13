@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เชิญชวนลอยกระทง</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0D1B2A;
+            color: #F0EBD8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://example.com/bg-image.jpg'); /* URL ของรูปภาพพื้นหลัง */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+
+        .invitation-card {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .invitation-card h1 {
+            font-size: 2em;
+            margin: 0;
+            color: #FFD700;
+        }
+
+        .invitation-card p {
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+
+        .invitation-card .event-details {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #F4A261;
+            color: #0D1B2A;
+            border-radius: 5px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 15px;
+            background-color: #FFD700;
+            color: #0D1B2A;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #F4A261;
+            color: #fff;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #FFD700;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation-card">
+        <h1>เชิญชวนลอยกระทง</h1>
+        <p>🌕✨ ขอเชิญชวนเพื่อน ๆ มาร่วมงานลอยกระทงในปีนี้! มาร่วมสนุกกันในคืนพระจันทร์เต็มดวง พร้อมลอยกระทงและขอพรกันได้ที่นี่ 💦</p>
+
+        <div class="event-details">
+            <p><strong>📅 วันที่:</strong> 24 พฤศจิกายน 2567</p>
+            <p><strong>📍 สถานที่:</strong> ริมแม่น้ำเจ้าพระยา</p>
+        </div>
+
+        <div class="btn" onclick="showMessage()">RSVP เข้าร่วมงาน</div>
+        <div id="message">แล้วพบกัน!</div>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+</body>
+</html>
